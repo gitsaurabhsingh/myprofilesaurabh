@@ -1,0 +1,1671 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+.header {
+  display: block;
+  background-color: #fff;
+  /* box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.15); */
+  padding: 31px 0px;
+  position: relative;
+}
+
+.header .overlay {
+  position: absolute;
+  background: rgba(255, 144, 0, 0.9);
+
+  top: -30px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.header .wrapper {
+  width: 1350px;
+  margin: auto;
+}
+
+.header .Header-top {
+  display: flex;
+  justify-content: space-between;
+  z-index: 9999;
+}
+
+.header .Header-top .header-disk {
+  display: block;
+  z-index: 11;
+}
+
+.header .header-disk img {
+  width: 70%;
+}
+
+.header .Header-top .Header-nav {
+  display: block;
+  z-index: 11;
+}
+
+.header .Header-top .Header-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.header .Header-top .Header-nav ul li {
+  padding: 15px 0px;
+}
+
+.header .Header-top .Header-nav ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: navy;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0; /* Initially hidden */
+  height: 100%;
+  background-color: #333;
+  display: none;
+  color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  z-index: 1000;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 40px;
+}
+
+.sidebar ul li {
+  padding: 32px 23px;
+  text-align: left;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.sidebar .sideclose {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.main-content {
+  transition: margin-left 0.5s;
+  padding: 20px;
+  flex: 1; /* To take the remaining width */
+}
+
+.sideopen {
+  cursor: pointer;
+  padding: 15px;
+  background: #333;
+  color: white;
+  position: absolute;
+  display: none;
+  top: 20px;
+  left: 20px;
+  z-index: 1001; /* Above sidebar */
+}
+
+.sideopen span {
+  display: none;
+  height: 3px;
+  width: 30px;
+  background: #fff;
+  margin: 5px 0;
+}
+
+.banner {
+  display: block;
+  position: relative;
+  top: -30px;
+  width: 100%;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.banner .wrapper {
+  width: 1350px;
+  margin: auto;
+}
+
+.banner .wrapper .banner-text {
+  display: block;
+  text-align: center;
+  position: absolute;
+  top: 20%;
+  right: 27%;
+}
+
+.banner .wrapper .banner-text img {
+  width: 30%;
+  height: 300%;
+  object-fit: cover;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.banner .wrapper .banner-text .banner-Article {
+  display: block;
+}
+
+.banner .wrapper .banner-text .banner-Article h2 {
+  font-size: 46px;
+  font-weight: 500;
+  color: #fff;
+  padding: 30px 0px;
+}
+
+.banner .wrapper .banner-text .banner-Article h3 {
+  font-size: 30px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.banner .wrapper .banner-text .banner-Icon {
+  display: block;
+  text-align: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.banner .wrapper .banner-text .banner-Icon a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.banner .wrapper .banner-text .banner-Icon a i {
+  margin-left: 20px;
+  font-size: 25px;
+  color: #fff;
+}
+
+.About {
+  background-color: #f9f9f9;
+  margin-top: -33px;
+  padding: 30px 0px;
+}
+
+.About .wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.About .wrapper .AboutText {
+  display: block;
+  text-align: center;
+}
+
+.About .wrapper .AboutText h2 {
+  font-size: 37px;
+  font-weight: 600;
+  color: red;
+}
+
+.About .wrapper .AboutText h3 {
+  font-size: 17px;
+  font-weight: 400;
+  color: #333;
+  margin-top: 20px;
+}
+
+.About .wrapper .About-Flex {
+  display: block;
+  padding-top: 40px;
+}
+
+.About .wrapper .About-Flex .About-Name {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+
+.About .wrapper .About-Flex .About-Name h2 {
+  font-size: 18px;
+  color: #333;
+  font-weight: 500;
+}
+.About .wrapper .About-Flex .About-Name h3 {
+  font-size: 18px;
+  color: #333;
+  font-weight: 500;
+}
+
+.About .wrapper .About-Flex .button {
+  padding-top: 60px;
+}
+
+.About .wrapper .About-Flex .button a {
+  text-decoration: none;
+  padding: 19px 19px;
+  border-radius: 12px;
+  background: #ffe04e;
+  font-size: 19px;
+  font-weight: 600;
+  color: #000;
+}
+.Resume {
+  display: block;
+  position: relative;
+}
+.Resume img {
+  width: 100%;
+}
+
+.Resume .wrapper {
+  width: 1350px;
+  margin: auto;
+}
+
+.Resume .wrapper .Resume-text {
+  display: block;
+  text-align: center;
+}
+
+.Resume .wrapper .Resume-text h2 {
+  font-size: 40px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.Resume .wrapper .Resume-navbar {
+  position: absolute;
+  top: 118px;
+}
+.Resume .wrapper .Resume-navbar .Resume-disk {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  padding-top: 150px;
+  width: 1350px;
+  margin: auto;
+}
+
+.Resume .wrapper .Resume-navbar .Resume-disk .Resume-Read {
+  display: block;
+  width: 48%;
+}
+
+.Resume .wrapper .Resume-navbar .Resume-disk .Resume-Read h2 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.Resume .wrapper .Resume-navbar .Resume-disk .Resume-Read i {
+  height: 3px;
+  width: 98%;
+  background: #808;
+  display: block;
+  margin: 20px 10px;
+  position: relative;
+}
+
+.Resume .wrapper .Resume-navbar .Resume-disk .Resume-Read i::before {
+  content: "•";
+  color: #fff;
+  font-size: 1.2em;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -10px;
+}
+
+.Resume .wrapper .Resume-navbar .Resume-disk .Resume-Read h3 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+  margin-top: 60px;
+}
+
+.Resume .wrapper .Resume-navbar .Resume-disk .Resume-Read h4 {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+  margin-top: 30px;
+}
+
+.Resume .wrapper .Resume-navbar .Resume-disk .Resume-Read p {
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+  margin-top: 30px;
+  text-align: justify;
+  line-height: 27px;
+}
+.Services {
+  background-color: #000;
+  margin-top: -6px;
+  padding: 53px 0px;
+}
+
+.Services .wrapper {
+  width: 1350px;
+  margin: auto;
+}
+
+.Services .wrapper .Services-Disk {
+  display: block;
+  text-align: center;
+  width: 700px;
+  margin: auto;
+}
+
+.Services .wrapper .Services-Disk h2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.Services .wrapper .Services-Disk p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 25px;
+  margin-top: 26px;
+}
+
+.Services .wrapper .Services-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.Services .wrapper .Services-flex .Science-Box {
+  width: 31%;
+  display: flex;
+  background: #fff;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  padding: 40px 20px;
+  border-radius: 10px;
+  transition: 0.6s;
+}
+
+.Services .wrapper .Services-flex .Science-Box i {
+  height: 100px;
+  width: 100px;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 35px;
+  color: #0dcff1;
+  transition: 0.6s;
+  font-weight: 600;
+}
+
+.Services .wrapper .Services-flex .Science-Box h3 {
+  font-size: 22px;
+  color: #222;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.Services .wrapper .Services-flex .Science-Box p {
+  font-size: 18px;
+  color: #666;
+  font-weight: 500;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 28px;
+}
+
+.Services .wrapper .Services-flex .Science-Box:hover:nth-child(1) i {
+  color: #ffe04e;
+  background: #000;
+}
+.Services .wrapper .Services-flex .Science-Box:hover:nth-child(2) i {
+  color: #000;
+  background: red;
+}
+.Services .wrapper .Services-flex .Science-Box:hover:nth-child(3) i {
+  color: blue;
+  background: #000;
+}
+.Services .wrapper .Services-flex .Science-Box:hover:nth-child(4) i {
+  color: blueviolet;
+  background: Red;
+}
+.Services .wrapper .Services-flex .Science-Box:hover:nth-child(5) i {
+  color: #000;
+  background: blueviolet;
+}
+.Services .wrapper .Services-flex .Science-Box:hover:nth-child(6) i {
+  color: #000;
+  background: palevioletred;
+}
+.Skills {
+  display: block;
+  background: #171547;
+  width: 100%;
+  padding: 40px 0px;
+}
+
+.Skills .wrapper {
+  width: 1350px;
+  margin: auto;
+}
+
+.Skills .wrapper .Skills-text {
+  display: block;
+  text-align: center;
+}
+
+.Skills .wrapper .Skills-text h2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.Skills .wrapper .Skills-text p {
+  font-size: 17px;
+  font-weight: 400;
+  color: #ddd;
+  line-height: 26px;
+  margin-top: 20px;
+}
+
+.Skills .wrapper .Skills-details {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.Skills .wrapper .Skills-details .Skills-Fornt {
+  width: 48%;
+}
+
+.Skills .wrapper .Skills-details .Skills-Fornt .Skills-Content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.Skills .wrapper .Skills-details .Skills-Fornt .Skills-Content h2 {
+  font-size: 19px;
+  font-weight: 500;
+  color: #fff;
+}
+.Skills .wrapper .Skills-details .Skills-Fornt .Skills-Content h3 {
+  font-size: 19px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.Skills .wrapper .Skills-details .Skills-Fornt .Range {
+  width: 100%;
+  background: #666;
+  height: 10px;
+  border-radius: 4px;
+  margin-top: 15px;
+  position: relative;
+}
+
+.Skills .wrapper .Skills-details .Skills-Fornt .Range span {
+  background: blueviolet;
+  width: 90%;
+  position: absolute;
+  top: 0;
+  height: 10px;
+  border-radius: 4px;
+}
+
+.Portfolio {
+  display: block;
+  background: #000;
+  padding: 40px 0px;
+}
+
+.Portfolio .wrapper {
+  width: 1350px;
+  margin: auto;
+}
+.Portfolio .wrapper .Portfolio-disk {
+  display: block;
+  text-align: center;
+}
+
+.Portfolio .wrapper .Portfolio-disk h2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.Portfolio .wrapper .Portfolio-img .head {
+  display: flex;
+  justify-content: center;
+}
+
+.Portfolio .wrapper .head ul {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.Portfolio .wrapper .head ul li {
+  display: block;
+  padding: 5px 5px;
+}
+
+.Portfolio .wrapper .head ul li a {
+  font-size: 25px;
+  color: #666;
+  text-decoration: none;
+  padding: 10px 60px;
+  border-radius: 5px;
+  background: #ddd;
+  color: #fff;
+}
+
+.Portfolio .wrapper .head ul li.active a {
+  background: #0000ff;
+  color: #fff;
+}
+
+.Portfolio .wrapper .image {
+  display: block;
+  padding: 30px 0px;
+}
+
+.Portfolio .wrapper .image .form {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.Portfolio .wrapper .image .form {
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.Portfolio .wrapper .image .form img {
+  width: 30%;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.Portfolio .wrapper .image .form1 {
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.Portfolio .wrapper .image .form1 img {
+  width: 30%;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.Portfolio .wrapper .image .form2 {
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.Portfolio .wrapper .image .form2 img {
+  width: 30%;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.Portfolio .wrapper .image .form3 {
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.Portfolio .wrapper .image .form3 img {
+  width: 30%;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.Portfolio .wrapper .image .form4 {
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.Portfolio .wrapper .image .form4 img {
+  width: 30%;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.Portfolio .wrapper .image .form5 {
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.Portfolio .wrapper .image .form5 img {
+  width: 30%;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.Contact {
+  background: #171547;
+  padding: 40px 0px;
+}
+
+.Contact .wrapper {
+  width: 1350px;
+  margin: auto;
+}
+
+.Contact .wrapper .Contact-disk {
+  display: block;
+  text-align: center;
+}
+
+.Contact .wrapper .Contact-disk h2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.Contact .wrapper .Contact-disk p {
+  font-size: 19px;
+  color: #666;
+  line-height: 25px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.Contact .wrapper .Contact-pro {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 56px;
+}
+
+.Contact .wrapper .Contact-flex {
+  display: block;
+  width: 23%;
+}
+
+.Contact .wrapper .Contact-pro .Contact-flex .Contact-location {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 56px;
+}
+
+.Contact .wrapper .Contact-pro .Contact-flex .Contact-location i {
+  padding: 17px 20px;
+  background: #555;
+  border-radius: 50px;
+  color: #fff;
+}
+
+.Contact .wrapper .Contact-pro .Contact-flex .Contact-location i:hover {
+  background: #0dcff1;
+  color: #000;
+}
+
+.Contact
+  .wrapper
+  .Contact-pro
+  .Contact-flex
+  .Contact-location
+  .Contact-Address {
+  display: block;
+}
+
+.Contact
+  .wrapper
+  .Contact-pro
+  .Contact-flex
+  .Contact-location
+  .Contact-Address
+  h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.Contact
+  .wrapper
+  .Contact-pro
+  .Contact-flex
+  .Contact-location
+  .Contact-Address
+  p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #666;
+}
+
+.Contact .wrapper .Contact-pro .Contact-Input {
+  display: block;
+  width: 70%;
+  margin-top: 56px;
+}
+
+.Contact .wrapper .Contact-pro .Contact-Input .Contact-InputDisk {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+}
+
+.Contact .wrapper .Contact-pro .Contact-Input .Contact-InputDisk input {
+  width: 48%;
+  padding: 17px;
+  background: none;
+  border-radius: 10px;
+  outline: none;
+  border: Solid 1px #666;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.Contact .wrapper .Contact-pro .Contact-Input .Input-Subject {
+  display: block;
+  margin-top: 30px;
+}
+
+.Contact .wrapper .Contact-pro .Contact-Input .Input-Subject input {
+  width: 100%;
+  background: none;
+  padding: 17px;
+  border-radius: 10px;
+  outline: none;
+  border: Solid 1px #666;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.Contact .wrapper .Contact-pro .Contact-Input .Input-Subject1 {
+  display: block;
+  margin-top: 30px;
+}
+
+.Contact .wrapper .Contact-pro .Contact-Input .Input-Subject1 textarea {
+  width: 100%;
+  height: 150px;
+  background: #171547;
+  border-radius: 4px;
+  font-size: 17px;
+  color: #666;
+  font-weight: 500;
+  outline: none;
+  text-transform: capitalize;
+  padding: 5px 10px;
+  border: solid 1px color-mix(in srgb, #fff, transparent 80%);
+}
+
+.Contact .wrapper .Contact-pro .Contact-Input button {
+  display: block;
+  margin-top: 25px;
+  width: 150px;
+  height: 45px;
+  background: #bb0526;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 25px;
+  color: #fff;
+  transition: 0.6s;
+}
+
+.location {
+  background-color: #000;
+  padding: 40px 0px;
+}
+
+.location .wrapper {
+  width: 1350px;
+  margin: auto;
+}
+
+.location .wrapper .location-image {
+  display: block;
+}
+
+.location .wrapper .location-image iframe {
+  border-radius: 10px;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+  .header {
+    display: block;
+    width: 100%;
+  }
+
+  .header .wrapper {
+    display: none;
+  }
+
+  .header .overlay {
+    width: 100%;
+    display: none;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    display: block;
+    color: #fff;
+    overflow-x: hidden;
+
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 1000;
+  }
+
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .sidebar ul li {
+    padding: 32px 23px;
+    text-align: left;
+  }
+
+  .sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 26px;
+    font-weight: 500;
+  }
+
+  .sidebar .sideclose {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .main-content {
+    transition: margin-left 0.5s;
+    padding: 20px;
+    flex: 1;
+  }
+
+  .sideopen {
+    cursor: pointer;
+    padding: 15px;
+    background: Red;
+    color: white;
+    position: absolute;
+    display: block;
+    top: 30px;
+    left: 20px;
+    z-index: 9;
+  }
+
+  .sideopen span {
+    display: block;
+    height: 3px;
+    width: 30px;
+    background: #fff;
+    margin: 5px 0;
+  }
+
+  .banner {
+    display: block;
+    position: relative;
+    top: -151px;
+    width: 100%;
+    height: 73vh;
+    padding: 49px 0px;
+  }
+
+  .banner img {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .banner .wrapper {
+    width: 1350px;
+    margin: auto;
+  }
+
+  .banner .wrapper .banner-text {
+    display: block;
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    right: 0px;
+  }
+
+  .banner .wrapper .banner-text img {
+    width: 44%;
+    height: 300%;
+    object-fit: cover;
+    padding: 20px;
+    border-radius: 50%;
+  }
+
+  .banner .wrapper .banner-text .banner-Article {
+    display: block;
+  }
+
+  .banner .wrapper .banner-text .banner-Article h2 {
+    font-size: 26px;
+    font-weight: 500;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    padding: 30px 0px;
+  }
+
+  .banner .wrapper .banner-text .banner-Article h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+  }
+
+  .banner .wrapper .banner-text .banner-Icon {
+    display: block;
+    text-align: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .banner .wrapper .banner-text .banner-Icon a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .banner .wrapper .banner-text .banner-Icon a i {
+    margin-left: 20px;
+    font-size: 25px;
+    color: #fff;
+  }
+
+  .About {
+    background-color: #f9f9f9;
+    margin-top: -33px;
+    padding: 30px 0px;
+    width: 100%;
+  }
+
+  .About .wrapper {
+    width: 100%;
+  }
+
+  .About .wrapper .About-Flex {
+    display: block;
+  }
+  .About .wrapper .About-Flex .About-Name {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+  }
+
+  .About .wrapper .About-Flex .About-Name h2 {
+    font-size: 15px;
+    color: #333;
+    font-weight: 400;
+  }
+  .About .wrapper .About-Flex .About-Name h3 {
+    font-size: 15px;
+    color: #333;
+    font-weight: 400;
+  }
+  .Resume {
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+  .Resume img {
+    width: 100%;
+    height: 346vh;
+  }
+
+  .Resume .wrapper {
+    width: 1350px;
+    margin: auto;
+  }
+
+  .Resume .wrapper .Resume-text {
+    display: block;
+    text-align: center;
+  }
+
+  .Resume .wrapper .Resume-text h2 {
+    font-size: 35px;
+    color: #fff;
+    font-weight: 500;
+  }
+
+  .Resume .wrapper .Resume-navbar {
+    position: absolute;
+    padding: 14px;
+    top: 0px;
+  }
+  .Resume .wrapper .Resume-navbar .Resume-disk {
+    display: block;
+    width: 100%;
+    padding: 8px;
+  }
+
+  .Resume .wrapper .Resume-navbar .Resume-disk .Resume-Read {
+    display: block;
+    width: 100%;
+    padding-top: 30px;
+  }
+
+  .Resume .wrapper .Resume-navbar .Resume-disk .Resume-Read h2 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+  }
+
+  .Resume .wrapper .Resume-navbar .Resume-disk .Resume-Read i {
+    height: 3px;
+    width: 98%;
+    background: #808;
+    display: block;
+    margin: 20px 10px;
+    position: relative;
+  }
+
+  .Resume .wrapper .Resume-navbar .Resume-disk .Resume-Read i::before {
+    content: "•";
+    color: #fff;
+    font-size: 1.2em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -10px;
+  }
+
+  .Resume .wrapper .Resume-navbar .Resume-disk .Resume-Read h3 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 30px;
+  }
+
+  .Resume .wrapper .Resume-navbar .Resume-disk .Resume-Read h4 {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+
+  .Resume .wrapper .Resume-navbar .Resume-disk .Resume-Read p {
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+    margin-top: 30px;
+    text-align: justify;
+    line-height: 27px;
+  }
+
+  .Services {
+    background-color: #000;
+    margin-top: -6px;
+    padding: 12px;
+    width: 100%;
+  }
+
+  .Services .wrapper {
+    width: 100%;
+  }
+
+  .Services .wrapper .Services-Disk {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  .Services .wrapper .Services-Disk h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+
+  .Services .wrapper .Services-Disk p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 25px;
+    margin-top: 26px;
+  }
+
+  .Services .wrapper .Services-flex {
+    display: block;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .Services .wrapper .Services-flex .Science-Box {
+    width: 100%;
+    display: flex;
+    background: #fff;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding: 40px 20px;
+    border-radius: 10px;
+    transition: 0.6s;
+  }
+
+  .Services .wrapper .Services-flex .Science-Box i {
+    height: 100px;
+    width: 100px;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 35px;
+    color: #0dcff1;
+    transition: 0.6s;
+    font-weight: 600;
+  }
+
+  .Services .wrapper .Services-flex .Science-Box h3 {
+    font-size: 22px;
+    color: #222;
+    font-weight: 500;
+    margin-top: 20px;
+  }
+
+  .Services .wrapper .Services-flex .Science-Box p {
+    font-size: 18px;
+    color: #666;
+    font-weight: 500;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 28px;
+  }
+
+  .Services .wrapper .Services-flex .Science-Box:hover:nth-child(1) i {
+    color: #ffe04e;
+    background: #000;
+  }
+  .Services .wrapper .Services-flex .Science-Box:hover:nth-child(2) i {
+    color: #000;
+    background: red;
+  }
+  .Services .wrapper .Services-flex .Science-Box:hover:nth-child(3) i {
+    color: blue;
+    background: #000;
+  }
+  .Services .wrapper .Services-flex .Science-Box:hover:nth-child(4) i {
+    color: blueviolet;
+    background: Red;
+  }
+  .Services .wrapper .Services-flex .Science-Box:hover:nth-child(5) i {
+    color: #000;
+    background: blueviolet;
+  }
+  .Services .wrapper .Services-flex .Science-Box:hover:nth-child(6) i {
+    color: #000;
+    background: palevioletred;
+  }
+
+  .Skills {
+    display: block;
+    background: #171547;
+    width: 100%;
+    padding: 12px;
+  }
+
+  .Skills .wrapper {
+    width: 100%;
+  }
+
+  .Skills .wrapper .Skills-text {
+    display: block;
+    text-align: center;
+  }
+
+  .Skills .wrapper .Skills-text h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  .Skills .wrapper .Skills-text p {
+    font-size: 17px;
+    font-weight: 400;
+    color: #ddd;
+    line-height: 26px;
+    margin-top: 20px;
+  }
+
+  .Skills .wrapper .Skills-details {
+    display: block;
+  }
+
+  .Skills .wrapper .Skills-details .Skills-Fornt {
+    width: 100%;
+  }
+
+  .Skills .wrapper .Skills-details .Skills-Fornt .Skills-Content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+
+  .Skills .wrapper .Skills-details .Skills-Fornt .Skills-Content h2 {
+    font-size: 19px;
+    font-weight: 500;
+    color: #fff;
+  }
+  .Skills .wrapper .Skills-details .Skills-Fornt .Skills-Content h3 {
+    font-size: 19px;
+    font-weight: 500;
+    color: #fff;
+  }
+
+  .Skills .wrapper .Skills-details .Skills-Fornt .Range {
+    width: 100%;
+    background: #666;
+    height: 10px;
+    border-radius: 4px;
+    margin-top: 15px;
+    position: relative;
+  }
+
+  .Skills .wrapper .Skills-details .Skills-Fornt .Range span {
+    background: blueviolet;
+    width: 90%;
+    position: absolute;
+    top: 0;
+    height: 10px;
+    border-radius: 4px;
+  }
+
+  .Portfolio {
+    display: block;
+    background: #000;
+    padding: 12px;
+    width: 100%;
+  }
+
+  .Portfolio .wrapper {
+    width: 100%;
+  }
+  .Portfolio .wrapper .Portfolio-disk {
+    display: block;
+    text-align: center;
+  }
+
+  .Portfolio .wrapper .Portfolio-disk h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  .Portfolio .wrapper .Portfolio-img .head {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .Portfolio .wrapper .head ul {
+    list-style: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    justify-content: center;
+  }
+
+  .Portfolio .wrapper .head ul li {
+    display: block;
+    padding: 5px 5px;
+    margin-top: 20px;
+  }
+
+  .Portfolio .wrapper .head ul li a {
+    font-size: 20px;
+    color: #666;
+    text-decoration: none;
+    padding: 10px 60px;
+    border-radius: 5px;
+    background: #ddd;
+    color: #fff;
+  }
+
+  .Portfolio .wrapper .head ul li.active a {
+    background: #0000ff;
+    color: #fff;
+  }
+
+  .Portfolio .wrapper .image {
+    display: block;
+    padding: 30px 0px;
+  }
+
+  .Portfolio .wrapper .image .form {
+    display: block;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .Portfolio .wrapper .image .form {
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .Portfolio .wrapper .image .form img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+    object-fit: cover;
+  }
+  .Portfolio .wrapper .image .form1 {
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .Portfolio .wrapper .image .form1 img {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  .Portfolio .wrapper .image .form2 {
+    border-radius: 10px;
+    width: 100%;
+    display: block;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .Portfolio .wrapper .image .form2 img {
+    width: 30%;
+    margin-top: 20px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  .Portfolio .wrapper .image .form3 {
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .Portfolio .wrapper .image .form3 img {
+    width: 30%;
+    margin-top: 20px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  .Portfolio .wrapper .image .form4 {
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .Portfolio .wrapper .image .form4 img {
+    width: 30%;
+    margin-top: 20px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  .Portfolio .wrapper .image .form5 {
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .Portfolio .wrapper .image .form5 img {
+    width: 30%;
+    margin-top: 20px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  .Contact {
+    background: #171547;
+    padding: 12px;
+  }
+
+  .Contact .wrapper {
+    width: 100%;
+  }
+
+  .Contact .wrapper .Contact-disk {
+    display: block;
+    text-align: center;
+  }
+
+  .Contact .wrapper .Contact-disk h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  .Contact .wrapper .Contact-disk p {
+    font-size: 19px;
+    color: #666;
+    line-height: 25px;
+    font-weight: 400;
+    margin-top: 20px;
+  }
+
+  .Contact .wrapper .Contact-pro {
+    display: block;
+    width: 100%;
+  }
+
+  .Contact .wrapper .Contact-flex {
+    display: block;
+    width: 100%;
+  }
+
+  .Contact .wrapper .Contact-pro .Contact-flex .Contact-location {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 56px;
+    gap: 20px;
+  }
+
+  .Contact .wrapper .Contact-pro .Contact-flex .Contact-location i {
+    padding: 17px 20px;
+    background: #555;
+    border-radius: 50px;
+    color: #fff;
+  }
+
+  .Contact .wrapper .Contact-pro .Contact-flex .Contact-location i:hover {
+    background: #0dcff1;
+    color: #000;
+  }
+
+  .Contact
+    .wrapper
+    .Contact-pro
+    .Contact-flex
+    .Contact-location
+    .Contact-Address {
+    display: block;
+    width: 100%;
+  }
+
+  .Contact
+    .wrapper
+    .Contact-pro
+    .Contact-flex
+    .Contact-location
+    .Contact-Address
+    h2 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+  }
+
+  .Contact
+    .wrapper
+    .Contact-pro
+    .Contact-flex
+    .Contact-location
+    .Contact-Address
+    p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #666;
+  }
+
+  .Contact .wrapper .Contact-pro .Contact-Input {
+    display: block;
+    width: 100%;
+    margin-top: 56px;
+  }
+
+  .Contact .wrapper .Contact-pro .Contact-Input .Contact-InputDisk {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+  }
+
+  .Contact .wrapper .Contact-pro .Contact-Input .Contact-InputDisk input {
+    width: 100%;
+    padding: 17px;
+    background: none;
+    border-radius: 10px;
+    outline: none;
+    border: Solid 1px #666;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .Contact .wrapper .Contact-pro .Contact-Input .Input-Subject {
+    display: block;
+    margin-top: 30px;
+  }
+
+  .Contact .wrapper .Contact-pro .Contact-Input .Input-Subject input {
+    width: 100%;
+    background: none;
+    padding: 17px;
+    border-radius: 10px;
+    outline: none;
+    border: Solid 1px #666;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .Contact .wrapper .Contact-pro .Contact-Input .Input-Subject1 {
+    display: block;
+    margin-top: 30px;
+  }
+
+  .Contact .wrapper .Contact-pro .Contact-Input .Input-Subject1 textarea {
+    width: 100%;
+    height: 150px;
+    background: #171547;
+    border-radius: 4px;
+    font-size: 17px;
+    color: #666;
+    font-weight: 500;
+    outline: none;
+    text-transform: capitalize;
+    padding: 5px 10px;
+    border: solid 1px color-mix(in srgb, #fff, transparent 80%);
+  }
+
+  .Contact .wrapper .Contact-pro .Contact-Input button {
+    display: block;
+    margin-top: 25px;
+    width: 150px;
+    height: 45px;
+    background: #bb0526;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    transition: 0.6s;
+  }
+
+  .location {
+    background-color: #000;
+    padding: 12px;
+  }
+
+  .location .wrapper {
+    width: 100%;
+  }
+
+  .location .wrapper .location-image {
+    display: block;
+  }
+
+  .location .wrapper .location-image iframe {
+    border-radius: 10px;
+  }
+}
