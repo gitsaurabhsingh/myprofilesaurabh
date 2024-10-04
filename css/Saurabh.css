@@ -1068,7 +1068,7 @@ body {
   }
   .Resume img {
     width: 100%;
-    height: 346vh;
+    height: 206vh !important;
   }
 
   .Resume .wrapper {
