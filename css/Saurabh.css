@@ -895,10 +895,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background-image: url(../img/disksa.jfif);
-    background-size: cover;
-    object-fit: cover;
-    background-repeat: no-repeat;
+    background: #f4f4f4;
     height: 100%;
     display: block;
     color: #fff;
@@ -910,7 +907,8 @@ body {
   }
 
   .sidebar img {
-    width: 10%;
+    width: 36%;
+    margin-left: 120px;
   }
 
   .sidebar ul {
@@ -924,7 +922,7 @@ body {
   }
 
   .sidebar ul li a {
-    color: white;
+    color: #000;
     text-decoration: none;
     display: block;
     font-size: 26px;
