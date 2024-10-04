@@ -81,6 +81,7 @@ body {
   width: 0; /* Initially hidden */
   height: 100%;
   background-color: #333;
+  background-image: url(../img/disksa.jfif);
   display: none;
   color: #fff;
   overflow-x: hidden;
