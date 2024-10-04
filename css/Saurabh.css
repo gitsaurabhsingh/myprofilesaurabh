@@ -940,7 +940,6 @@ body {
   .sideopen {
     cursor: pointer;
     padding: 15px;
-    background: Red;
     color: white;
     position: absolute;
     display: block;
