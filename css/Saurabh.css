@@ -1445,7 +1445,7 @@ body {
   }
 
   .Portfolio .wrapper .image .form2 img {
-    width: 30%;
+    width: 100%;
     margin-top: 20px;
     border-radius: 10px;
     object-fit: cover;
@@ -1459,7 +1459,7 @@ body {
   }
 
   .Portfolio .wrapper .image .form3 img {
-    width: 30%;
+    width: 100%;
     margin-top: 20px;
     border-radius: 10px;
     object-fit: cover;
@@ -1473,7 +1473,7 @@ body {
   }
 
   .Portfolio .wrapper .image .form4 img {
-    width: 30%;
+    width: 100%;
     margin-top: 20px;
     border-radius: 10px;
     object-fit: cover;
@@ -1487,7 +1487,7 @@ body {
   }
 
   .Portfolio .wrapper .image .form5 img {
-    width: 30%;
+    width: 100%;
     margin-top: 20px;
     border-radius: 10px;
     object-fit: cover;
