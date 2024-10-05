@@ -895,7 +895,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background: #f4f4f4;
+    background: #666;
     height: 100%;
     display: block;
     color: #fff;
@@ -919,10 +919,11 @@ body {
   .sidebar ul li {
     padding: 32px 23px;
     text-align: left;
+    border-bottom: solid 2px #fff;
   }
 
   .sidebar ul li a {
-    color: #000;
+    color: #fff;
     text-decoration: none;
     display: block;
     font-size: 26px;
@@ -935,6 +936,7 @@ body {
     right: 20px;
     font-size: 24px;
     cursor: pointer;
+    color: #000;
   }
 
   .main-content {
