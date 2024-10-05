@@ -210,6 +210,10 @@ body {
   color: #fff;
 }
 
+.banner .wrapper .banner-text .banner-Icon a i:hover {
+  color: #0000ff;
+}
+
 .About {
   background-color: #f9f9f9;
   margin-top: -33px;
@@ -1036,6 +1040,9 @@ body {
     margin-left: 20px;
     font-size: 25px;
     color: #fff;
+  }
+  .banner .wrapper .banner-text .banner-Icon a i:hover {
+    color: #0000ff;
   }
 
   .About {
