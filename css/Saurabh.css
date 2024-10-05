@@ -279,11 +279,10 @@ body {
   color: #000;
 }
 .Resume {
-  display: block;
-  position: relative;
-}
-.Resume img {
-  width: 100%;
+  background-image: url(../img/blue.jfif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0px;
 }
 
 .Resume .wrapper {
@@ -302,31 +301,25 @@ body {
   font-weight: 500;
 }
 
-.Resume .wrapper .Resume-navbar {
-  position: absolute;
-  top: 118px;
-}
-.Resume .wrapper .Resume-navbar .Resume-disk {
+.Resume .Resume-disk {
   display: flex;
   justify-content: space-between;
   gap: 25px;
-  padding-top: 150px;
-  width: 1350px;
-  margin: auto;
+  margin-top: 100px;
 }
 
-.Resume .wrapper .Resume-navbar .Resume-disk .Resume-Read {
+.Resume .Resume-disk .Resume-Read {
   display: block;
   width: 48%;
 }
 
-.Resume .wrapper .Resume-navbar .Resume-disk .Resume-Read h2 {
+.Resume .Resume-disk .Resume-Read h2 {
   font-size: 20px;
   color: #fff;
   font-weight: 500;
 }
 
-.Resume .wrapper .Resume-navbar .Resume-disk .Resume-Read i {
+.Resume .Resume-disk .Resume-Read i {
   height: 3px;
   width: 98%;
   background: #808;
@@ -335,7 +328,7 @@ body {
   position: relative;
 }
 
-.Resume .wrapper .Resume-navbar .Resume-disk .Resume-Read i::before {
+.Resume .Resume-disk .Resume-Read i::before {
   content: "•";
   color: #fff;
   font-size: 1.2em;
@@ -344,22 +337,20 @@ body {
   transform: translateY(-50%);
   left: -10px;
 }
-
-.Resume .wrapper .Resume-navbar .Resume-disk .Resume-Read h3 {
+.Resume .Resume-disk .Resume-Read h3 {
   font-size: 20px;
   color: #fff;
   font-weight: 500;
-  margin-top: 60px;
 }
 
-.Resume .wrapper .Resume-navbar .Resume-disk .Resume-Read h4 {
+.Resume .Resume-disk .Resume-Read h4 {
   font-size: 18px;
   color: #fff;
   font-weight: 500;
   margin-top: 30px;
 }
 
-.Resume .wrapper .Resume-navbar .Resume-disk .Resume-Read p {
+.Resume .Resume-disk .Resume-Read p {
   font-size: 16px;
   color: #000;
   font-weight: 500;
@@ -548,6 +539,40 @@ body {
   top: 0;
   height: 10px;
   border-radius: 4px;
+}
+
+.Skills .wrapper .Skills-details .Skills-Fornt:nth-child(2) .Range span {
+  width: 61%;
+}
+.Skills .wrapper .Skills-details .Skills-Fornt:nth-child(3) .Range span {
+  width: 61%;
+}
+.Skills .wrapper .Skills-details .Skills-Fornt:nth-child(4) .Range span {
+  width: 61%;
+}
+.Skills .wrapper .Skills-details .Skills-Fornt:nth-child(5) .Range span {
+  width: 70%;
+}
+.Skills .wrapper .Skills-details .Skills-Fornt:nth-child(6) .Range span {
+  width: 72%;
+}
+.Skills .wrapper .Skills-details .Skills-Fornt:nth-child(7) .Range span {
+  width: 70%;
+}
+.Skills .wrapper .Skills-details .Skills-Fornt:nth-child(8) .Range span {
+  width: 50%;
+}
+.Skills .wrapper .Skills-details .Skills-Fornt:nth-child(9) .Range span {
+  width: 80%;
+}
+.Skills .wrapper .Skills-details .Skills-Fornt:nth-child(10) .Range span {
+  width: 80%;
+}
+.Skills .wrapper .Skills-details .Skills-Fornt:nth-child(11) .Range span {
+  width: 82%;
+}
+.Skills .wrapper .Skills-details .Skills-Fornt:nth-child(12) .Range span {
+  width: 90%;
 }
 
 .Portfolio {
@@ -1076,94 +1101,22 @@ body {
     font-weight: 400;
   }
   .Resume {
-    display: block;
-    position: relative;
     width: 100%;
-  }
-  .Resume img {
-    width: 100%;
-    height: 206vh;
   }
 
   .Resume .wrapper {
-    width: 1350px;
-    margin: auto;
-  }
-
-  .Resume .wrapper .Resume-text {
-    display: block;
-    text-align: center;
-  }
-
-  .Resume .wrapper .Resume-text h2 {
-    font-size: 35px;
-    color: #fff;
-    font-weight: 500;
-  }
-
-  .Resume .wrapper .Resume-navbar {
-    position: absolute;
-    padding: 14px;
-    top: 0px;
-  }
-  .Resume .wrapper .Resume-navbar .Resume-disk {
-    display: block;
     width: 100%;
-    padding: 8px;
   }
 
-  .Resume .wrapper .Resume-navbar .Resume-disk .Resume-Read {
+  .Resume .wrapper .Resume-disk {
     display: block;
+    padding: 12px;
     width: 100%;
-    padding-top: 30px;
   }
 
-  .Resume .wrapper .Resume-navbar .Resume-disk .Resume-Read h2 {
-    font-size: 20px;
-    color: #fff;
-    font-weight: 500;
-  }
-
-  .Resume .wrapper .Resume-navbar .Resume-disk .Resume-Read i {
-    height: 3px;
-    width: 98%;
-    background: #808;
-    display: block;
-    margin: 20px 10px;
-    position: relative;
-  }
-
-  .Resume .wrapper .Resume-navbar .Resume-disk .Resume-Read i::before {
-    content: "•";
-    color: #fff;
-    font-size: 1.2em;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: -10px;
-  }
-
-  .Resume .wrapper .Resume-navbar .Resume-disk .Resume-Read h3 {
-    font-size: 20px;
-    color: #fff;
-    font-weight: 500;
-    margin-top: 30px;
-  }
-
-  .Resume .wrapper .Resume-navbar .Resume-disk .Resume-Read h4 {
-    font-size: 18px;
-    color: #fff;
-    font-weight: 500;
-    margin-top: 10px;
-  }
-
-  .Resume .wrapper .Resume-navbar .Resume-disk .Resume-Read p {
-    font-size: 16px;
-    color: #000;
-    font-weight: 500;
-    margin-top: 30px;
-    text-align: justify;
-    line-height: 27px;
+  .Resume .wrapper .Resume-disk .Resume-Read {
+    width: 100%;
+    margin-top: 40px;
   }
 
   .Services {
